@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title data-i18n="awsal">AWSAL</title>
+    <link href="technical.css" rel="stylesheet">
+    <link rel="icon" href="farmer-logo2.png">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Whisper&display=swap" rel="stylesheet">
+     
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+</head>
+<body>
+  <div class="hero">
+    <nav>
+      <div class="logo">
+        <img src="farmer-logo2.png" atl="logo" width="70">
+        <h1>AWSAL</h1>
+
+      </div>
+    
+       <ul class="nav-items">
+         <li data-i18n="home" class="nav-item"> <a href="home.html"> Home </a> </li>
+       
+         <li data-i18n="clint" id="menu" class="nav-item"><a href="#" >Shop as </a>
+                
+                    <ul class="sub-menu">
+                    <li data-i18n="farmer" id="sup"> <a href="material.html">Farmer </a>
+                        <!-- <ul class="subsubmenu" id="subsup">
+                            <li><a href="material.html">Material</a></li>
+                        </ul> -->
+                    </li>
+                    <li data-i18n="bisness" id="bus"> <a href="business.html">Business  </a>
+                    <!-- <ul class="subsubmenu" id="subbus">
+                        <li><a href="business.html">Product</a></li>
+                    </ul> -->
+                    </li>
+                    <li data-i18n="customer" id="cus"> <a href="customer.html"> Customer</a> 
+                        <!-- <ul class="subsubmenu" id="subcus">
+                            <li><a href="customer.html">Product</a></li>
+                        </ul> -->
+                    </li>
+                    </ul>
+                
+           </li>
+
+         <li data-i18n="Service" id="menu" class="nav-item"><a href="#">Services </a>
+            <ul class="sub-menu">
+                <li data-i18n="farmer"> <a href="training.html">Training </a></li>
+                <li data-i18n="customer"> <a href="finance.html"> Financial</a> </li>
+                <li data-i18n="customer"> <a href="technical.html"> Technical</a> </li>
+                <li data-i18n="bisness"> <a href="consultation.html">Consultation  </a></li>
+                </ul>
+        </li>
+         <li data-i18n="about" class="nav-item"><a href="about.html">About us </a></li>
+        
+         <li data-i18n="contact" class="nav-item"> <a href="#footer"> Contact us  </a> </li>
+       </ul>
+   
+       
+
+
+       <div class="icon">
+        <i class='bx bx-search' undefined  style="margin-right: 1rem; font-size:x-large; cursor: pointer;"></i>
+        <a href="profil.html"><i class='bx bx-user' style="margin-right: 1rem; font-size:x-large; cursor: pointer;" id="user"> </i></a>
+        <i class='bx bx-basket'style="margin-right: 1rem; font-size:x-large; cursor: pointer; position: relative;" onclick="showCart()" ><div class="count" id="count">0</div></i>
+        <select class="lang">
+            <option value="en" data-i18n="english" selected>English</option>
+            <option value="ar" data-i18n="arabic">Arabic</option>
+           </select>
+        </div>
+        <button onclick='showForm()'class="butn">Login </button>
+    </nav>
+
+
+    <div class="hero_section">
+        <div class="div_content_hero" >
+            
+            <h3 class="head_content_hero1">technical</h3>
+            <div class="pragraf">
+              <p class="paragraph_content">Home  </p>
+              <span class="material-symbols-outlined">arrow_right_alt</span>
+              <p>technical</p>
+              </div>
+            <!-- <a href="#shop"> <button class="btn"> shop honey</button></a>-->
+        </div>
+        <div class="div_img_hero" >
+            <img src="1llkele9.png" width="100%"  >
+        </div>
+   
+    </div>
+  </div>
+
+  <section class="section" id="section1">
+    <div class="wrapper" id="div1">
+      <span class="icon-close" id="close" onclick="closefun()">
+      <i class='bx bx-x'></i></span>
+      <div class="logreg-box">
+         <!--  login form -->
+           <div class="form-box login">
+              <div class="logreg-title">
+                  <h2>Login</h2>
+                  <br>
+                  <p>Please Login To Use The Platform</p>
+              </div>
+
+              <form action="myphp.php" method="post">
+                <div class="input-box">
+                  <span class="icon"><i class='bx bxs-envelope'></i></span>
+                  <input type="email" name="email" id="" required>
+                  <label>Email</label>
+                </div>
+
+                <div class="input-box">
+                  <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+                  <input type="password" name="password" id="" required>
+                  <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                  <label><input type="checkbox">Remember me</label>
+                  <a href="#">Forgot Password?</a>
+                </div>
+
+                <button type="submit" name="btnlog" class="bttn"> Login</button>
+                <div class="logreg-link">
+                  <p>Don't have an account?
+                  <a href="#" class="register-link" onclick="registerfun()">Sign up</a>
+                  </p>
+                </div>
+              </form>
+            </div>
+            <div class="media-options">
+              <a href="#">
+                <i class='bx bxl-google'></i>
+                <span>Login with Google</span>
+              </a>
+              <a href="#">
+                <i class='bx bxl-facebook-circle'></i>
+                <span>Login with Facebook</span>
+              </a>
+            </div>
+       
+
+          </div>
+        </section>
+
+
+
+       
+
+
+     <!-- register form -->
+
+<section class ='registerr' id="section2">
+<div class="wrapper2" id="div2">
+  <span class="icon-close" id="close2" onclick="close2fun()">
+  <i class='bx bx-x'></i></span>
+  <div class="logreg-box">
+    <div class="form-box register" id="register">
+      <div class="logreg-title">
+          <h2>Sign Up</h2>
+          <br>
+          <p>Please Provide The Following To Verify Your Identity</p>
+      </div>
+      <form action="myphp.php" method="post">
+        <div class="input-box">
+          <span class="icon"><i class='bx bxs-user'></i></span>
+          <input type="text" name="full name" id="" required>
+          <label>Full Name</label>
+        </div>
+
+        <div class="input-box">
+          <span class="icon"><i class='bx bxs-envelope'></i></span>
+          <input type="email" name="email" id="" required>
+          <label>Email</label>
+        </div>
+
+        <div class="input-box">
+          <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+          <input type="password" name="password" id="" required>
+          <label>Password</label>
+        </div>
+
+        <div class="input-box">
+        
+          <input type="phone" name="Phone Number" id="" required>
+          <label>Phone Number</label>
+        </div> 
+
+
+        <div class="remember-forgot">
+          
+         <label><input type="radio" name="S or B or C" value="S">Farmer</label> 
+        </div>
+        <div class="remember-forgot">
+          <label><input type="radio"name="S or B or C" value="B">Business</label>
+        </div>
+        <div class="remember-forgot">
+          <label><input type="radio"name="S or B or C" value="C">Customer</label>
+        </div>
+        <div class="remember-forgot">
+          <label><input type="checkbox">I agree to the terms & conditions</label>
+       </div>
+
+        <button type="submit" name="btnregis" class="bttn"> Sign Up</button>
+        <div class="logreg-link">
+          
+        <div class="logreg-link">
+          <p>Already have an account?
+          <a href="#" class="login-link" onclick="logfun()" style="color: #fff;">Login</a>
+          </p>
+        </div>
+       
+      </form>
+    </div>
+  
+</div>  
+  </div>     
+  </div>
+  <script src="AWSJS.JS"></script>
+
+        </section> 
+
+<script src="cart.js"></script>
+<div class="cart" id="cart">
+<div class="head">
+<p class="title">shopping cart</p>
+<span class="material-symbols-outlined" onclick="closeCart()"> close </span>
+</div>
+<div class="purshases-product">
+  <img src="boxtomato.png" >
+  <div class="product-content">
+    <p class="name"> tomato</p>
+    <p class="price">1box <span style="font-family: sans-serif; font-weight: 10;color: rgb(173, 187, 173);" > x</span> 200.00LE</p> 
+  </div>
+   
+  <span class="material-symbols-outlined" id="small">
+    close_small
+    </span>
+</div>
+ <div class="total">
+   <p class="name">subtotal <span>:</span></p>
+   <p class="total-price">200.00LE</p>
+ </div>
+
+ <button class="btn">checkout</button>
+</div>
+
+
+<p class="slogen">AWSAL Is Empowering Farmers Through Expert Agricultural Supervision...</p>
+<div class="intro">
+<img src="supervision1.jpg" alt="AWSAL team" class="supervision1">
+<p class="prag">We provide comprehensive agricultural supervision from A to Z, encompassing soil health assessment,
+  identifying essential nutrients for the soil, determining the ideal crop for the land, implementing efficient irrigation techniques for optimal production with minimal waste and cost,
+   and maximizing profitability for farmers.</p>
+  </div>
+<p class="pragrafs"> As part of our commitment to supporting farmers, we offer end-to-end agricultural supervision services. Our team takes care of every aspect of the farming process, ensuring success from start to finish.
+
+      We begin by conducting a thorough assessment of soil health, analyzing its composition and identifying any deficiencies. This allows us to determine the precise nutrients and amendments required to optimize soil fertility and create the ideal growing conditions.
+      
+      Next, we carefully evaluate the characteristics of the land to recommend the most suitable crop selection. Our experts consider factors such as climate, soil type, market demand, and profitability potential to guide farmers towards making informed decisions.
+      
+      Once the crop is chosen, we provide guidance on crop management techniques, including irrigation strategies. Our goal is to implement efficient irrigation methods that minimize water waste and reduce costs, while still ensuring the crops receive the necessary moisture for healthy growth. This not only benefits the environment but also helps farmers maximize their yields and profitability.
+      
+      Throughout the entire process, our team remains dedicated to the economic success of farmers. We continually assess and optimize farming practices, providing ongoing support to enhance productivity and minimize risks. Our aim is to empower farmers with the knowledge and tools they need to achieve the highest levels of profitability and sustainable agricultural practices.
+      
+      With our comprehensive agricultural supervision services, farmers can trust that their operations are in capable hands, allowing them to focus on what they do best – cultivating exceptional crops and reaping the rewards of their hard work.</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<button id="scrollToTopButton" class="scroll-to-top-button"><i class='bx bx-chevron-up' style='color:#ffffff; font-size: x-large;'  ></i></button>
+
+  <script>
+ const scrollToTopButton = document.getElementById('scrollToTopButton');
+
+window.addEventListener('scroll', () => {
+  if (window.pageYOffset > 0) {
+    scrollToTopButton.classList.add('show');
+  } else {
+    scrollToTopButton.classList.remove('show');
+  }
+});
+
+scrollToTopButton.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+</script>
+
+<div id="subscribe">
+  <div class="content">
+    <span class="yllow">Get the buzz</span>
+    <p> Product releases, promotions,<br> latest news and updates</p>
+  </div>
+  <div class="input"> 
+      <form action="" method="post">
+    <input id="emailInput" type="email" placeholder="Enter your email..." required>
+  
+    <button class="btn" onclick="subscribe()">Subscribe</button>
+  </form>
+  </div>
+</div>
+
+<script>
+  function subscribe() {
+      const emailInput = document.getElementById('emailInput');
+      const email = emailInput.value;
+    
+      if (email === '') {
+        alert('Please enter your email.');
+      } else {
+        alert('Your email is saved successfully.');
+      }
+      emailInput.value = " ";
+    }
+  </script>
+
+<div class="about" id="footer">
+  <div class="info">
+      <div class="shop_link">
+          <p>shop as</p>
+          <a href="#shop">Supplier</a> 
+          <a href="#shop">Business</a>
+          <a href="#shop">Customer</a>
+         
+      </div>
+
+      <div class="info_link">
+          <p>info</p>
+          <a href="#hero">home</a>
+          <a>about</a>
+          <a href="#best">best seller</a>
+          <a href="#best">offers</a>
+      </div>
+  </div>
+
+  <div class="queenzi">
+      <h1 > AWSAL</h1>
+      <p class="main">why AWSAL?</p><br>
+      <p>We are all about bringing Fresh<br> & Healthy   Products from the field <br>to our Clients!</p><br>
+      <p class="main">Any questions? Give us a call at</p>
+      <p class="num">01111308024</p>
+  
+      <div id="icons">
+      
+          <a href="https://www.facebook.com"> <i class='bx bxl-facebook-circle bx-tada' style='color:rgb(242, 198, 86)' ></i></a>
+          <a href="https://www.instagram.com"><i class='bx bxl-instagram-alt bx-tada' style='color:rgb(242, 198, 86)' ></i></a>
+          <a href="https://twitter.com"><i class='bx bxl-twitter bx-tada' style='color:rgb(242, 198, 86)' ></i></a>
+          <a href="https://web.whatsapp.com"><i class='bx bxl-whatsapp bx-tada' style='color:rgb(242, 198, 86)' ></i></a>
+      </div>
+      
+     
+  </div>
+
+  <div class="find">
+      <p class="hd">find us</p>
+      <p><span class="l1">AWSAl,</span><br><br>
+          297 Said Street,<br><br>
+           Tanta, Eg</p>
+  </div>
+
+</div>
+
+</body>
+<!-- <script src='script.js'></script> -->
+</html>

@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <title data-i18n="awsal">AWSAL</title>
+  <link href="home.css" rel="stylesheet">
+  <link rel="icon" href="farmer-logo2.png">
+
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ephesis&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Whisper&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="hero">
+    <nav>
+      <div class="logo">
+        <img src="farmer-logo2.png" atl="logo" width="70">
+        <h1>AWSAL</h1>
+
+      </div>
+
+      <ul class="nav-items">
+        <li data-i18n="home" class="nav-item"> <a href="home.html"> Home </a> </li>
+
+        <li data-i18n="clint" id="menu" class="nav-item"><a href="#">Shop as </a>
+
+          <ul class="sub-menu">
+            <li data-i18n="farmer" id="sup"> <a href="material.html">Farmer </a>
+
+            </li>
+            <li data-i18n="bisness" id="bus"> <a href="business.html">Business </a>
+
+            </li>
+            <li data-i18n="customer" id="cus"> <a href="customer.html"> Customer</a>
+
+            </li>
+          </ul>
+
+        </li>
+
+        <li data-i18n="Service" id="menu" class="nav-item"><a href="#category">Services </a>
+          <ul class="sub-menu">
+            <li data-i18n="farmer"> <a href="training.html">Training </a></li>
+            <li data-i18n="customer"> <a href="finance.html"> Financial</a> </li>
+            <li data-i18n="customer"> <a href="technical.html"> Technical</a> </li>
+            <li data-i18n="bisness"> <a href="consultation.html">Consultation </a></li>
+          </ul>
+        </li>
+        <li data-i18n="about" class="nav-item"><a href="about.html">About us </a></li>
+
+        <li data-i18n="contact" class="nav-item"> <a href="#footer"> Contact us </a> </li>
+      </ul>
+
+
+
+
+      <div class="icon">
+        <i class='bx bx-search' undefined style="margin-right: 1rem; font-size:x-large; cursor: pointer;"></i>
+        <a href="profil.html"><i class='bx bx-user' style="margin-right: 1rem; font-size:x-large; cursor: pointer;"
+            id="user"> </i></a>
+        <i class='bx bx-basket' style="margin-right: 1rem; font-size:x-large; cursor: pointer; position: relative;">
+          <div class="count" id="count">0</div>
+        </i>
+        <select class="lang">
+          <option value="en" data-i18n="english" selected>English</option>
+          <option value="ar" data-i18n="arabic">Arabic</option>
+        </select>
+      </div>
+      <button onclick='showForm()' class="butn">Login </button>
+    </nav>
+
+    <div class="hero_section">
+      <div class="div_content_hero">
+        <h3 class="yllow"> Save Money, Save Time</h3>
+        <h1 class="head_content_hero1">PURE AGRICULTURAL PRODUCT</h1>
+        <p class="paragraph_content">Learn About Our Services and Join Our Community Today </p>
+
+      </div>
+      <div class="div_img_hero">
+        <img src="s6fw13od.png" width="100%">
+      </div>
+    </div>
+  </div>
+
+
+  <section class="section" id="section1">
+    <div class="wrapper" id="div1">
+      <span class="icon-close" id="close" onclick="closefun()">
+        <i class='bx bx-x'></i></span>
+      <div class="logreg-box">
+        <!--  login form -->
+        <div class="form-box login">
+          <div class="logreg-title">
+            <h2>Login</h2>
+            <br>
+            <p>Please Login To Use The Platform</p>
+          </div>
+
+          <form action="myphp.php" method="post">
+            <div class="input-box">
+              <span class="icon"><i class='bx bxs-envelope'></i></span>
+              <input type="email" name="email" id="" required>
+              <label>Email</label>
+            </div>
+
+            <div class="input-box">
+              <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+              <input type="password" name="password" id="" required>
+              <label>Password</label>
+            </div>
+            <div class="remember-forgot">
+              <label><input type="checkbox">Remember me</label>
+              <a href="#">Forgot Password?</a>
+            </div>
+
+            <button type="submit" name="btnlog" class="bttn"> Login</button>
+            <div class="logreg-link">
+              <p>Don't have an account?
+                <a href="#" class="register-link" onclick="registerfun()">Sign up</a>
+              </p>
+            </div>
+          </form>
+        </div>
+        <div class="media-options">
+          <a href="#">
+            <i class='bx bxl-google'></i>
+            <span>Login with Google</span>
+          </a>
+          <a href="#">
+            <i class='bx bxl-facebook-circle'></i>
+            <span>Login with Facebook</span>
+          </a>
+        </div>
+
+
+      </div>
+  </section>
+
+
+
+
+
+
+  <!-- register form -->
+
+  <section class='registerr' id="section2">
+    <div class="wrapper2" id="div2">
+      <span class="icon-close" id="close2" onclick="close2fun()">
+        <i class='bx bx-x'></i></span>
+      <div class="logreg-box">
+        <div class="form-box register" id="register">
+          <div class="logreg-title">
+            <h2>Sign Up</h2>
+            <br>
+            <p>Please Provide The Following To Verify Your Identity</p>
+          </div>
+          <form action="myphp.php" method="post">
+            <div class="input-box">
+              <span class="icon"><i class='bx bxs-user'></i></span>
+              <input type="text" name="full name" id="" required>
+              <label>Full Name</label>
+            </div>
+
+            <div class="input-box">
+              <span class="icon"><i class='bx bxs-envelope'></i></span>
+              <input type="email" name="email" id="" required>
+              <label>Email</label>
+            </div>
+
+            <div class="input-box">
+              <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+              <input type="password" name="password" id="" required>
+              <label>Password</label>
+            </div>
+
+            <div class="input-box">
+
+              <input type="phone" name="Phone Number" id="" required>
+              <label>Phone Number</label>
+            </div>
+
+
+            <div class="remember-forgot">
+
+              <label><input type="radio" name="S or B or C" value="S">Farmer</label>
+            </div>
+            <div class="remember-forgot">
+              <label><input type="radio" name="S or B or C" value="B">Business</label>
+            </div>
+            <div class="remember-forgot">
+              <label><input type="radio" name="S or B or C" value="C">Customer</label>
+            </div>
+            <div class="remember-forgot">
+              <label><input type="checkbox">I agree to the terms & conditions</label>
+            </div>
+
+            <button type="submit" name="btnregis" class="bttn"> Sign Up</button>
+            <div class="logreg-link">
+
+              <div class="logreg-link">
+                <p>Already have an account?
+                  <a href="#" class="login-link" onclick="logfun()">Login</a>
+                </p>
+              </div>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+    </div>
+    <script src="AWSJS.JS"></script>
+
+  </section>
+
+
+
+
+
+
+
+
+
+  <section class="features" id="features">
+    <div class="ribbon">Our Services</div>
+    <a href="consultation.html">
+    <div class="box-container">
+      <div class="box">
+        <img src="advice.jpeg" alt="" />
+        <h3>Consultation</h3>
+        <p>
+          We provide agricultural consultancy to farmer and bussiness. We understand that agribusiness
+          is diverse and every customer is different.
+
+        </p>
+      </div>
+    </a>
+      
+     <a href="finance.html">
+      <div class="box">
+        <img src="Coins-with-trees.jpg" style="width: 230px;" alt="" />
+        <h3>Finance</h3>
+        <p>
+          Benefit from accessible agricultural loans with the Agricultural Bank of Egypt
+          <br>and secure your fruitful financial support.
+        </p>
+
+      </div>
+    </a>
+       
+      <a href="training.html">
+      <div class="box">
+        <img src="training.jpeg" alt="" />
+        <h3>Agriculture Training</h3>
+        <p>
+          We provide training with experts in the field <br>of agriculture
+          using the latest standards, techniques and modern irrigation methods.
+
+        </p>
+
+      </div>
+    </a>
+    </div>
+  </section>
+
+  <!-- categories section starts  -->
+
+  <script src="cart.js"></script>
+  <section class="categories" id="categories">
+
+    <div class="ribbon" id="best"> Best Seller</div>
+
+    <div class="marq">
+      <div class="products">
+        <div class="product">
+          <img src="boxtomato.png" alt="this is a product photo" style="height: 120px; width: 170px;"><br>
+          <a href="#"> tomatoes </a>
+          <p>200.0LE / BOX</p>
+          <div class="rate">
+            <input type="radio" id="star5" name="rate" value="5" />
+            <label for="star5" title="text">5 stars</label>
+            <input type="radio" id="star4" name="rate" value="4" />
+            <label for="star4" title="text">4 stars</label>
+            <input type="radio" id="star3" name="rate" value="3" />
+            <label for="star3" title="text">3 stars</label>
+            <input type="radio" id="star2" name="rate" value="2" />
+            <label for="star2" title="text">2 stars</label>
+            <input type="radio" id="star1" name="rate" value="1" />
+            <label for="star1" title="text">1 star</label>
+          </div>
+          <button class="btn" onclick="addToCart()"> add to bag</button>
+          <i class='bx bx-heart-circle ' style='color:#e5e1e1; font-size: xx-large; position: relative; right: 7.5rem;'
+            id="heart" onclick="toggleColor()"></i>
+        </div>
+
+        <div class="product">
+          <img src="zucchiniboxfree.jpg" alt="this is a product photo" style="width: 170px; height: 120px;"> <br>
+          <a href="#">zucchini </a>
+          <p>250.00LE / BOX</p>
+          <div class="rate">
+            <input type="radio" id="star5" name="rate" value="5" />
+            <label for="star5" title="text">5 stars</label>
+            <input type="radio" id="star4" name="rate" value="4" />
+            <label for="star4" title="text">4 stars</label>
+            <input type="radio" id="star3" name="rate" value="3" />
+            <label for="star3" title="text">3 stars</label>
+            <input type="radio" id="star2" name="rate" value="2" />
+            <label for="star2" title="text">2 stars</label>
+            <input type="radio" id="star1" name="rate" value="1" />
+            <label for="star1" title="text">1 star</label>
+          </div>
+          <button class="btn" onclick="addToCart()"> add to bag</button>
+          <i class='bx bx-heart-circle ' style='color:#e5e1e1; font-size: xx-large; position: relative; right: 7.5rem;'
+            id="heart" onclick="toggleColor()"></i>
+        </div>
+
+        <div class="product">
+          <img src="carrotbox5.png" alt="this is a product photo" style="height: 120px; width: 170px;"><br>
+          <a href="#">carrot </a>
+          <p>280.00LE / BOX</p>
+          <div class="rate">
+            <input type="radio" id="star5" name="rate" value="5" />
+            <label for="star5" title="text">5 stars</label>
+            <input type="radio" id="star4" name="rate" value="4" />
+            <label for="star4" title="text">4 stars</label>
+            <input type="radio" id="star3" name="rate" value="3" />
+            <label for="star3" title="text">3 stars</label>
+            <input type="radio" id="star2" name="rate" value="2" />
+            <label for="star2" title="text">2 stars</label>
+            <input type="radio" id="star1" name="rate" value="1" />
+            <label for="star1" title="text">1 star</label>
+          </div>
+          <button class="btn" onclick="addToCart()"> add to bag</button>
+          <i class='bx bx-heart-circle ' style='color:#e5e1e1; font-size: xx-large; position: relative; right: 7.5rem;'
+            id="heart" onclick="toggleColor()"></i>
+        </div>
+
+        <div class="product">
+          <img src="cucumb.jpeg" alt="this is a product photo" style="height: 120px; width: 170px; "><br>
+          <a href="#">cucumber </a>
+          <p>150.00LE / BOX</p>
+          <div class="rate">
+            <input type="radio" id="star5" name="rate" value="5" />
+            <label for="star5" title="text">5 stars</label>
+            <input type="radio" id="star4" name="rate" value="4" />
+            <label for="star4" title="text">4 stars</label>
+            <input type="radio" id="star3" name="rate" value="3" />
+            <label for="star3" title="text">3 stars</label>
+            <input type="radio" id="star2" name="rate" value="2" />
+            <label for="star2" title="text">2 stars</label>
+            <input type="radio" id="star1" name="rate" value="1" />
+            <label for="star1" title="text">1 star</label>
+          </div>
+          <button class="btn" onclick="addToCart()"> add to bag</button>
+          <i class='bx bx-heart-circle ' style='color:#e5e1e1; font-size: xx-large; position: relative; right: 7.5rem;'
+            id="heart" onclick="toggleColor()"></i>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="marquee" style="margin-top:3rem; margin-bottom: 5rem;">
+      <div class="products">
+        <div class="product">
+          <img src="ELmanar.jpg" alt="this is a product photo" style="height: 140px; width: 110px;"><br>
+          <a href="#"> humic king compost </a>
+          <p>300.00LE</p>
+          <div class="rate">
+            <input type="radio" id="star5" name="rate" value="5" />
+            <label for="star5" title="text">5 stars</label>
+            <input type="radio" id="star4" name="rate" value="4" />
+            <label for="star4" title="text">4 stars</label>
+            <input type="radio" id="star3" name="rate" value="3" />
+            <label for="star3" title="text">3 stars</label>
+            <input type="radio" id="star2" name="rate" value="2" />
+            <label for="star2" title="text">2 stars</label>
+            <input type="radio" id="star1" name="rate" value="1" />
+            <label for="star1" title="text">1 star</label>
+          </div>
+          <button class="btn" onclick="addToCart()"> add to bag</button>
+          <i class='bx bx-heart-circle ' style='color:#e5e1e1; font-size: xx-large; position: relative; right: 7.5rem;'
+            id="heart" onclick="toggleColor()"></i>
+        </div>
+
+
+        <div class="product">
+          <img src="rakey.png" alt="this is a product photo" style="height: 250px; width: 200px;"><br>
+          <a href="#">total trowel 340mm </a>
+          <p>160.00LE</p>
+          <div class="rate">
+            <input type="radio" id="star5" name="rate" value="5" />
+            <label for="star5" title="text">5 stars</label>
+            <input type="radio" id="star4" name="rate" value="4" />
+            <label for="star4" title="text">4 stars</label>
+            <input type="radio" id="star3" name="rate" value="3" />
+            <label for="star3" title="text">3 stars</label>
+            <input type="radio" id="star2" name="rate" value="2" />
+            <label for="star2" title="text">2 stars</label>
+            <input type="radio" id="star1" name="rate" value="1" />
+            <label for="star1" title="text">1 star</label>
+          </div>
+          <button class="btn" onclick="addToCart()"> add to bag</button>
+          <i class='bx bx-heart-circle ' style='color:#e5e1e1; font-size: xx-large; position: relative; right: 7.5rem;'
+            id="heart" onclick="toggleColor()"></i>
+        </div>
+
+        <div class="product">
+          <img src="strobarry.png" alt="this is a product photo" width="140"><br>
+          <a href="#">stawberry seeds </a>
+          <p>70.00LE</p>
+          <div class="rate">
+            <input type="radio" id="star5" name="rate" value="5" />
+            <label for="star5" title="text">5 stars</label>
+            <input type="radio" id="star4" name="rate" value="4" />
+            <label for="star4" title="text">4 stars</label>
+            <input type="radio" id="star3" name="rate" value="3" />
+            <label for="star3" title="text">3 stars</label>
+            <input type="radio" id="star2" name="rate" value="2" />
+            <label for="star2" title="text">2 stars</label>
+            <input type="radio" id="star1" name="rate" value="1" />
+            <label for="star1" title="text">1 star</label>
+          </div>
+          <button class="btn" onclick="addToCart()"> add to bag</button>
+          <i class='bx bx-heart-circle ' style='color:#e5e1e1; font-size: xx-large; position: relative; right: 7.5rem;'
+            id="heart" onclick="toggleColor()"></i>
+        </div>
+
+        <div class="product">
+          <img src="cherry.png" alt="this is a product photo"> <br>
+          <a href="#">cherry tomato seeds</a>
+          <p>70.00LE</p>
+          <div class="rate">
+            <input type="radio" id="star5" name="rate" value="5" />
+            <label for="star5" title="text">5 stars</label>
+            <input type="radio" id="star4" name="rate" value="4" />
+            <label for="star4" title="text">4 stars</label>
+            <input type="radio" id="star3" name="rate" value="3" />
+            <label for="star3" title="text">3 stars</label>
+            <input type="radio" id="star2" name="rate" value="2" />
+            <label for="star2" title="text">2 stars</label>
+            <input type="radio" id="star1" name="rate" value="1" />
+            <label for="star1" title="text">1 star</label>
+          </div>
+          <button class="btn" onclick="addToCart()"> add to bag</button>
+          <i class='bx bx-heart-circle ' style='color:#e5e1e1; font-size: xx-large; position: relative; right: 7.5rem;'
+            id="heart" onclick="toggleColor()"></i>
+        </div>
+      </div>
+
+
+  </section>
+  <script>
+    function toggleColor() {
+      var heartIcon = document.getElementById('heart');
+      if (heartIcon.style.color === 'red') {
+        heartIcon.style.color = '#e5e1e1';
+      } else {
+        heartIcon.style.color = 'red';
+      }
+    }
+  </script>
+
+
+  <!-- categories section ends -->
+
+
+
+  <button id="scrollToTopButton" class="scroll-to-top-button"><i class='bx bx-chevron-up'
+      style='color:#ffffff; font-size: x-large;'></i></button>
+
+  <script>
+    const scrollToTopButton = document.getElementById('scrollToTopButton');
+
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 0) {
+        scrollToTopButton.classList.add('show');
+      } else {
+        scrollToTopButton.classList.remove('show');
+      }
+    });
+
+    scrollToTopButton.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  </script>
+
+  <!-- body end  -->
+  <div id="subscribe">
+    <div class="content">
+      <span class="yllow">Get the buzz</span>
+      <p> Product releases, promotions,<br> latest news and updates</p>
+    </div>
+    <div class="input">
+      <form action="" method="post">
+        <input id="emailInput" type="email" placeholder="Enter your email..." required>
+
+        <button class="btn" onclick="subscribe()">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function subscribe() {
+      const emailInput = document.getElementById('emailInput');
+      const email = emailInput.value;
+
+      if (email === '') {
+        alert('Please enter your email.');
+      } else {
+        alert('Your email is saved successfully.');
+      }
+      emailInput.value = " ";
+    }
+  </script>
+
+  <div class="about" id="footer">
+    <div class="info">
+      <div class="shop_link">
+        <p>shop as</p>
+        <a href="#shop">Supplier</a>
+        <a href="#shop">Business</a>
+        <a href="#shop">Customer</a>
+
+      </div>
+
+      <div class="info_link">
+        <p>info</p>
+        <a href="#hero">home</a>
+        <a>about</a>
+        <a href="#best">best seller</a>
+        <a href="#best">offers</a>
+      </div>
+    </div>
+
+    <div class="queenzi">
+      <h1> AWSAL</h1>
+      <p class="main">why AWSAL?</p><br>
+      <p>We are all about bringing Fresh<br> & Healthy Products from the field <br>to our Clients!</p><br>
+      <p class="main">Any questions? Give us a call at</p>
+      <p class="num">01111308024</p>
+
+      <div id="icons">
+
+        <a href="https://www.facebook.com"> <i class='bx bxl-facebook-circle bx-tada'
+            style='color:rgb(242, 198, 86)'></i></a>
+        <a href="https://www.instagram.com"><i class='bx bxl-instagram-alt bx-tada'
+            style='color:rgb(242, 198, 86)'></i></a>
+        <a href="https://twitter.com"><i class='bx bxl-twitter bx-tada' style='color:rgb(242, 198, 86)'></i></a>
+        <a href="https://web.whatsapp.com"><i class='bx bxl-whatsapp bx-tada' style='color:rgb(242, 198, 86)'></i></a>
+      </div>
+
+
+    </div>
+
+    <div class="find">
+      <p class="hd">find us</p>
+      <p><span class="l1">AWSAl,</span><br><br>
+        297 Said Street,<br><br>
+        Tanta, Eg</p>
+    </div>
+
+  </div>
+
+</body>
+<!-- <script src='script.js'></script> -->
+
+</html>
